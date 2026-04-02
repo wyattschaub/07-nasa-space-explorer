@@ -11,7 +11,7 @@ const modalDescription = document.getElementById('modalDescription');
 const modalInfo = document.getElementById('modalInfo');
 const closeModalButton = document.getElementById('closeModal');
 const spaceFactText = document.getElementById('spaceFactText');
-const apiKey = window.apiKey || '';
+const apiKey = 'DEMO_KEY';
 
 const spaceFacts = [
 	'Earth is the only planet known to host life.',
