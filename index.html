@@ -19,15 +19,44 @@
       <button>Get Space Images</button>
     </div>
 
+    <section class="space-fact" aria-live="polite">
+      <div>
+        <p class="space-fact-label">Random space fact</p>
+        <p id="spaceFactText" class="space-fact-text">Fetch images to reveal a fact.</p>
+      </div>
+      <a
+        class="space-fact-link"
+        href="https://www.jameswebbdiscovery.com/faqs/100-space-facts-that-will-blow-your-mind-updated-2025"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Explore more space facts
+      </a>
+    </section>
+
     <div id="gallery" class="gallery">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
         <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>
       </div>
     </div>
+
+    <div id="imageModal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button id="closeModal" class="modal-close" type="button" aria-label="Close image details">×</button>
+        <img id="modalImage" alt="" />
+        <div class="modal-text">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDate" class="modal-date"></p>
+          <p id="modalDescription"></p>
+          <dl id="modalInfo" class="modal-info"></dl>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="js/dateRange.js"></script>
+  <script src="js/secrets.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
